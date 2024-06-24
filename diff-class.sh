@@ -1,4 +1,5 @@
 #!/bin/bash
 git add .
 git commit -m "added new files"
-find target/ -type f -mmin -5
+git push 
+sh copy-class.sh
