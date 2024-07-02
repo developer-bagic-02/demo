@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.otp.demo</groupId>
-	<artifactId>OtpProject</artifactId>
+	<artifactId>WebProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>OtpProject</name>
 	<description>This Project is based on otp</description>
@@ -18,39 +18,91 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<!--   -->
+
 	<dependencies>
+
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.hibernate.validator</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>6.2.0.Final</version>
+</dependency>
+<dependency>
+    <groupId>javax.validation</groupId>
+    <artifactId>validation-api</artifactId>
+    <version>2.0.1.Final</version>
+</dependency>
+
+
+
+
+
+
+<!---->
+<!---->
+<!---->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+	<!--	<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
-		</dependency>
-		<dependency>
+		</dependency>-->
+<!--		<dependency>
 			<groupId>jakarta.platform</groupId>
 			<artifactId>jakarta.jakartaee-api</artifactId>
-			<version>9.1.0</version> <!-- Use the appropriate version -->
+			<version>9.1.0</version>  Use the appropriate version 
 			<scope>provided</scope>
+		</dependency>-->
+
+
+<!--		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>2.0.1.Final</version>
 		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.1</version> <!-- Use the appropriate version -->
-			<scope>provided</scope>
+-->		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>3.0.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.15.0</version> <!-- Use a version that is compatible with
-			your Spring Boot version -->
+<!--			<version>2.15.0</version>-->
 		</dependency>
 		<!-- Add WebLogic-specific dependencies -->
 
@@ -76,6 +128,8 @@
 			<version>20230227</version>
 		</dependency>
 	</dependencies>
+	<!--   -->
+
 
 	<!--<build>
 		<plugins>
@@ -93,7 +147,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.otp.demo.OtpProjectApplication</mainClass>
+					<mainClass>com.web.WebApplication</mainClass>
 					<!-- If needed, configure additional options -->
 				</configuration>
 			</plugin>
