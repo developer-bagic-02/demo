@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login Successful</title>
+<title>Login Successfully</title>
 </head>
 <body>
 	<h1>Login Successful</h1>
