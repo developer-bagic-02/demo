@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 public class CityController {
 
+	int a =0;
+	
 	@Autowired
 	CityService ser;
 
